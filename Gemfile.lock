@@ -2,6 +2,11 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
+    awesome_print (1.0.2)
+    daemons (1.1.8)
+    diff-lcs (1.1.3)
+    eventmachine (0.12.10)
+    haml (3.1.4)
     heroku (2.24.1)
       launchy (>= 0.3.2)
       netrc (~> 0.7.1)
@@ -14,18 +19,39 @@ GEM
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
+    rack-test (0.6.1)
+      rack (>= 1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rspec (2.9.0)
+      rspec-core (~> 2.9.0)
+      rspec-expectations (~> 2.9.0)
+      rspec-mocks (~> 2.9.0)
+    rspec-core (2.9.0)
+    rspec-expectations (2.9.1)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.9.0)
     rubyzip (0.9.7)
+    sass (3.1.15)
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     tilt (1.3.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
+  haml
   heroku
+  rack-test
+  rspec
+  sass
   sinatra
+  thin
